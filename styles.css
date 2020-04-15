@@ -3,10 +3,67 @@
 }
 
 html {
-  font-family: 'Amatic SC', cursive;
 }
 
 body {
+  background: url('./images/background.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
   margin: 0;
+  position: relative;
+  font-family: 'Amatic SC', cursive;
+
 }
 
+.cities {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cities__input {
+  /* border: 5px solid lightslategray; */
+  border-radius: 5px;
+  height: 50px;
+  text-align: center;
+  font-size: 32px;
+  width: 400px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+  border: 0;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+.cities__results {
+  padding: 0;
+  list-style: none;
+  margin: 5px 0 0;
+}
+
+.cities__result {
+  background-color: #faf8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 50px;
+  font-size: 24px;
+  clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+}
+
+.cities__result:nth-of-type(even) {
+  clip-path: polygon(2% 0, 98% 0, 100% 100%, 0% 100%);
+}
+
+.cities__population {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}

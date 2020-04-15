@@ -10,6 +10,23 @@
 </head>
 
 <body>
+  <section class="cities">
+    <div class="cities__wrapper">
+      <input type="text" name="cities-search" id="cities-search" class="cities__input" placeholder="City or State"
+        aria-label="Enter City or State">
+      <ul id="empty-results" class="cities__results cities__results--empty">
+        <li class="cities__result cities__result--empty">
+          <span class="cities__city">Filter For A City</span>
+          <span class="cities__population"></span>
+        </li>
+        <li class="cities__result cities__result--empty">
+          <span class="cities__city">Or A State</span>
+          <span class="cities__population"></span>
+        </li>
+      </ul>
+      <ul id="cities__results" class="cities__results"></ul>
+    </div>
+  </section>
   <script src="./script.js"></script>
 </body>
 
